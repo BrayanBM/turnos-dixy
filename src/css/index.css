@@ -1,0 +1,62 @@
+body {
+    background-color: #EEE8E2;
+}
+
+H2{
+    margin: 0;
+}
+.container{
+    max-width: 500px;
+}
+
+.card{
+    background-color: #F4F0EC;
+    color: #AF9383;
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.horarios{
+    display: flex;
+    flex-direction: row;
+}
+article {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    float: left;
+    border: 1px solid #AF9383;
+    border-radius: 4PX;
+  }
+  
+  article div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 2px;
+    color: #AF9383;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+    transition: .5s ease;
+  }
+  
+  article input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  input[type=checkbox]:checked ~ div {
+    background-color: #c2a99c;
+  }
+  
